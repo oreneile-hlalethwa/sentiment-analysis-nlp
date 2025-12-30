@@ -1,0 +1,6 @@
+Model,Test_Accuracy
+Rule-Based,23.6
+Basic ML (BoW),63.39
+Custom Vectorizer,64.03
+Tuned ML (BoW),65.11
+TF-IDF,66.02

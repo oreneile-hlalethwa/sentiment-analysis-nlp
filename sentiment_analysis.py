@@ -207,12 +207,12 @@ best_model = grid_search.best_estimator_
 test_accuracy_tuned = best_model.score(test_dataset['X'], test_dataset['y'])
 print(f"Test accuracy (tuned model): {test_accuracy_tuned:.2%}")
 
-# ============================================
+
 # TF-IDF APPROACH
-# ============================================
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-# Create TF-IDF pipeline
+# TF-IDF pipeline
 pipe_tfidf = Pipeline([
     ("vectorizer", TfidfVectorizer()),
     ("classifier", LogisticRegression(max_iter=1000))

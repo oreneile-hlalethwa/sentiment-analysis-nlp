@@ -360,7 +360,7 @@ test_results = pd.DataFrame({
     'Review': test_dataset['X'].values
 })
 test_results.to_csv('exports/test_predictions.csv', index=False)
-print("✅ Saved: exports/test_predictions.csv")
+print(" Saved: exports/test_predictions.csv")
 
 # 4. Confusion Matrix (long format for Power BI)
 from sklearn.metrics import confusion_matrix
